@@ -34,7 +34,6 @@ public class UserRepositoryTest {
     
     @Test
     public void getUsersWithSuccess() {
-//        Problème : userRepository.getUsers() va chercher UserRepository(apiService) au lieu de UserRepository(new FakeApiService())
         List<User> usersActual = userRepository.getUsers();
         List<User> usersExpected = FAKE_USERS;
         assertThat(usersActual, containsInAnyOrder(usersExpected.toArray()));

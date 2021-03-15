@@ -30,7 +30,6 @@ public class FakeApiService implements ApiService {
     @Override
     public void generateRandomUser() {
         // TODO: A modifier -> Modifié
-//        Proposition : changer signature (dans interface aussi) : generateRandomUser(List<User> userList)
         /**
          *         @See {@link User#random()} pour l'inspiration
          */
